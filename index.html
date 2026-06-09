@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <h1>TASK MANAGER</h1>
+    </nav>
+
+    <header>
+        <h1>My To-Do List</h1>
+        <p>Organise the tasks and stay productive</p>
+
+    </header>
+
+    <main class="mainContainer">
+        <section class="contact-box">
+            <h3>Contact Us</h3>
+            <p>please fill out the form below</p>
+
+            <form action="" id="contactForm">
+                <label>Name</label>
+                <input type="text" name="Name" id="name" placeholder="Enter your name">
+                <label>Email</label>
+                <input type="email" name="Email" id="email" placeholder="Enter your email">
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="message"></p>
+        </section>
+
+        <section class="todo-box">
+            <h3>To-do List </h3>
+            <div class="takeInput">
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 , TaskManager
+            All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
